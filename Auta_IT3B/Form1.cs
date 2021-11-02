@@ -16,6 +16,5 @@ namespace Auta_IT3B
         {
             InitializeComponent();
         }
-
     }
 }
