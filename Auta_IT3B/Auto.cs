@@ -35,7 +35,24 @@ namespace Auta_IT3B
 
         public int Vylozit(int naklad)
         {
+            if (Naklad < naklad)
+            {
+                var vylozeni = Naklad;
+                this.naklad = 0;
+                return vylozeni;
+            }
+            else
+            {
+                this.naklad -= naklad;
+                return naklad;
+            }
+        }
 
+        public int Zaparkovat()
+        {
+            var vylozeni = Naklad;
+            this.naklad = 0;
+            return vylozeni;
         }
     }
 }
